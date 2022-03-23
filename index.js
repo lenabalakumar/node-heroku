@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.json("Welcome");
 });
 
+app.get("/movies", (req, res) => {
+  res.json({ movieName: "Valimai", heroName: "Ajith Kumar" });
+});
+
 app.listen(PORT, () => {
   console.log(`server is running at ${PORT}`);
 });
