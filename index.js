@@ -20,7 +20,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/movies", (req, res) => {
-  res.json({ movieName: "Valimai", heroName: "Ajith Kumar" });
+  res.json([
+    { movieName: "Valimai", heroName: "Ajith Kumar" },
+    { movieName: "ET", heroName: "Suriya" },
+    { movieName: "Thalaivar 168", heroName: "Thalaivar" },
+    { movieName: "Beast", heroName: "Thalapathy" },
+    { movieName: "Maaran", heroName: "Dhanush" },
+  ]);
 });
 
 app.listen(PORT, () => {
